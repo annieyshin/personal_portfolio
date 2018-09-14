@@ -36,3 +36,13 @@ Personal Strengths & Traits
 1. Artistic
 1. Logical
 1. Organized
+
+```
+Hobbies & Interests
+```
+1. Design
+1. Dance
+1. Research
+1. Music
+1. Cooking
+1. Yoga

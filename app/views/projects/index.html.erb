@@ -2,8 +2,8 @@
 
 <ul>
   <% @projects.each do |project| %>
-    <li><%= link_to project.title, project_path(project) %></li>
-    <li><%= project.description %></li>
+    <li>Title: <%= link_to project.title, project_path(project) %></li>
+    <p>Description: <%= project.description %></p>
   <% end %>
 </ul>
 

@@ -24,9 +24,15 @@ Things you may want to cover:
 ```
 Personal Strengths & Traits
 ```
-
 1. Caring
 1. Creative
 1. Cultivates good culture
 1. Considerate
 1. Comical
+1. Fast Learner
+1. Friendly and communicative
+1. Fun and supportive
+1. Multifaceted skill set
+1. Artistic
+1. Logical
+1. Organized

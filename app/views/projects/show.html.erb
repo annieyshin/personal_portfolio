@@ -1,3 +1,11 @@
-<h1><%= @project.title %></h1>
+<div class="container">
 
-<p><%= link_to "Return to projects", projects_path %></p>
+  <h1><%= @project.title %></h1>
+  <h3><%= @project.description %></h3>
+  <p><%= link_to "Edit", edit_project_path(@project) %></p>
+  <p><%= link_to "Delete", project_path(@project),
+                         :data => {:confirm => "You sure?",
+                                   :method => "delete"} %></p>
+  <hr>
+  <p><%= link_to "Return to projects", projects_path %></p>
+</div>

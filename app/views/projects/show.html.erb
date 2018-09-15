@@ -1,11 +1,30 @@
 <div class="container">
 
   <h1><%= @project.title %></h1>
-  <h3><%= @project.description %></h3>
-  <p><%= link_to "Edit", edit_project_path(@project) %></p>
-  <p><%= link_to "Delete", project_path(@project),
-                         :data => {:confirm => "You sure?",
-                                   :method => "delete"} %></p>
+
+  <% if @project.skills.any? %>
+    <h4>Here are the skills for this project:</h4>
+
+    <ul>
+      <% @project.skills.each do |skill| %>
+        <li>
+          <%= skill.name %> |
+          <%= link_to "Edit", edit_project_skill_path(@project, skill) %> |
+          <%= link_to "Delete", project_skill_path(@project, skill),
+                                   :data => {:confirm => "Are you sure?",
+                                                  :method => "delete"} %>
+        </li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>There are no skills yet!</p>
+  <% end %>
+
+  <p><%= link_to "Add a skill", new_project_skill_path(@project) %></p>
+  <p><%= link_to "Delete List", project_path(@project),
+                          :data => {:confirm => "Are you sure?",
+                                         :method => "delete"} %></p>
+
   <hr>
   <p><%= link_to "Return to projects", projects_path %></p>
 </div>

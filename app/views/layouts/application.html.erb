@@ -8,7 +8,22 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  <nav class="navbar navbar-light">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <h1>Portfolio by Annie Shin</h1>
+        <h2>Featuring skills, projects, and hobbies</h2>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <span class="navbar-text">
+          <h2><%= link_to "Add New Project", new_project_path %></h2>
+        </span>
+        <span class="navbar-text">
+          <h2><%= link_to "Projects", projects_path %></h2>
+        </span>
+      </ul>
+    </div>
+   </nav>
   <body>
     <%= yield %>
   </body>
